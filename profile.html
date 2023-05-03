@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/Abdalla-frame.css" />
+    <link rel="stylesheet" type="text/css" href="css/project.css" />
+    <link rel="stylesheet" type="text/css" href="css/Normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Abdalla-dashboard</title>
+  </head>
+  <body>
+    <div class="dash-flex">
+      <div class="dash-nav">
+        <div class="dash-logo">
+          <h2>Abdalla</h2>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fa-regular fa-chart-bar"></i><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="setting.html"
+              ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="profile.html" class="active"
+              ><i class="fa-regular fa-user"></i><span>Profile</span></a
+            >
+          </li>
+          <li>
+            <a href="project.html"
+              ><i class="fa-solid fa-diagram-project"></i
+              ><span>Project</span></a
+            >
+          </li>
+          <li>
+            <a href="course.html"
+              ><i class="fa-solid fa-graduation-cap"></i><span>Courses</span></a
+            >
+          </li>
+          <li>
+            <a href="friend.html"
+              ><i class="fa-solid fa-user-group"></i><span>Friends</span></a
+            >
+          </li>
+          <li>
+            <a href="file.html"
+              ><i class="fa-regular fa-file"></i><span>Files</span></a
+            >
+          </li>
+          <li>
+            <a href="plan.html"
+              ><i class="fa-regular fa-credit-card"></i><span>Plans</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="dashboard container profile" id="">
+        <!--start-of-dash-header-->
+        <div class="dash-header flex-between .bg-white">
+          <div class="search-position">
+            <input
+              type="search"
+              name="search"
+              class="dash-search rad-6"
+              placeholder="Type a keyword"
+              id="search"
+            />
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="dash-icon">
+            <i class="fa-regular fa-bell fa-lg"></i>
+            <img src="imgs/avatar.png" />
+          </div>
+        </div>
+        <!--end-of-dash-header-->
+        <!--start-of-profile-content-->
+        <div class="dash-content profile-content">
+          <h1>Profile</h1>
+          <div class="dash-content-grid profile-content-grid">
+            <!-- start of prof-1 -->
+            <div class="prof-1 rad-10 bg-white d-flex">
+              <div class="prof-1-left p-20">
+                <img src="imgs/avatar.png" class="rad-50" />
+                <h3>Abdalla Abdelsabour</h3>
+                <p class="color-888 mt-10">Level 20</p>
+                <div class="progress-bar p-relative"></div>
+                <div class="rating">
+                  <i class="fa-solid fa-star fs-13"></i>
+                  <i class="fa-solid fa-star fs-13"></i>
+                  <i class="fa-solid fa-star fs-13"></i>
+                  <i class="fa-solid fa-star fs-13"></i>
+                  <i class="fa-solid fa-star fs-13"></i>
+                </div>
+                <p class="color-888 fs-13 m-10">550 Rating</p>
+              </div>
+
+              <div class="prof-1-right">
+                <div class="p-20">
+                  <h4 class="color-888">General Information</h4>
+                  <div class="p-r-flex d-flex">
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Full Name:</h4>
+                      <h4>Abdalla Abdelsabour</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Gender:</h4>
+                      <h4>Male</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Country:</h4>
+                      <h4>Egypt</h4>
+                    </div>
+                    <label class="m-w-250">
+                      <input class="toggle-checkbox" type="checkbox" checked />
+                      <div class="toggle-switch"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-20">
+                  <h4 class="color-888">Personal Information</h4>
+                  <div class="p-r-flex d-flex">
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Email:</h4>
+                      <h4>abdalla@g.co</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Phone:</h4>
+                      <h4>019123456789</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Date Of Birth:</h4>
+                      <h4>25/10/1982</h4>
+                    </div>
+                    <label class="m-w-250">
+                      <input class="toggle-checkbox" type="checkbox" />
+                      <div class="toggle-switch"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-20">
+                  <h4 class="color-888">Job Information</h4>
+                  <div class="p-r-flex d-flex">
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Title:</h4>
+                      <h4>Full Stack Developer</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Programming Language:</h4>
+                      <h4>Python</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Years Of Experience:</h4>
+                      <h4>15+</h4>
+                    </div>
+                    <label class="m-w-250">
+                      <input class="toggle-checkbox" type="checkbox" checked />
+                      <div class="toggle-switch"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="p-20">
+                  <h4 class="color-888">Billing Information</h4>
+                  <div class="p-r-flex d-flex">
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Payment Method:</h4>
+                      <h4>Paypal</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Email:</h4>
+                      <h4>email@website.com</h4>
+                    </div>
+                    <div class="d-flex m-w-250">
+                      <h4 class="color-888">Subscription:</h4>
+                      <h4>Monthly</h4>
+                    </div>
+                    <label class="m-w-250">
+                      <input class="toggle-checkbox" type="checkbox" />
+                      <div class="toggle-switch"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of prof-1 -->
+            <!-- start of prof-2 -->
+            <div class="n-prof-2-3">
+              <div class="prof-2 rad-10 bg-white p-20">
+                <h2 class="m-0">My Skills</h2>
+                <p class="color-888">Complete Skills List</p>
+                <div class="d-flex">
+                  <p class="bg-eee p-10 rad-6">HTML</p>
+                  <p class="bg-eee p-10 rad-6">Pugjs</p>
+                  <p class="bg-eee p-10 rad-6">HAML</p>
+                </div>
+                <div class="d-flex">
+                  <p class="bg-eee p-10 rad-6">CSS</p>
+                  <p class="bg-eee p-10 rad-6">SASS</p>
+                  <p class="bg-eee p-10 rad-6">Stylus</p>
+                </div>
+                <div class="d-flex">
+                  <p class="bg-eee p-10 rad-6">JavaScript</p>
+                  <p class="bg-eee p-10 rad-6">TypeScript</p>
+                </div>
+                <div class="d-flex">
+                  <p class="bg-eee p-10 rad-6">Vuejs</p>
+                  <p class="bg-eee p-10 rad-6">Reactjs</p>
+                </div>
+                <div class="d-flex">
+                  <p class="bg-eee p-10 rad-6">Jest</p>
+                  <p class="bg-eee p-10 rad-6">Jasmine</p>
+                </div>
+                <div class="d-flex">
+                  <p class="bg-eee p-10 rad-6">PHP</p>
+                  <p class="bg-eee p-10 rad-6">Laravel</p>
+                </div>
+                <div class="d-flex">
+                  <p class="bg-eee p-10 rad-6">Python</p>
+                  <p class="bg-eee p-10 rad-6">Django</p>
+                </div>
+              </div>
+              <div class="prof-3 rad-10 bg-white p-20">
+                <h2 class="m-0">Latest Activities</h2>
+                <p class="color-888">Latest Activities Done By The User</p>
+                <div class="prof-3-flex">
+                  <div class="prof-3-img">
+                    <img src="imgs/activity-01.png" />
+                    <div class="prof-left-text">
+                      <h4 class="m-0">Store</h4>
+                      <p class="color-888">
+                        Bought The Mastering Python Course
+                      </p>
+                    </div>
+                  </div>
+                  <div class="prof-right-text">
+                    <h4 class="m-0">18:10</h4>
+                    <p class="color-888">Yesterday</p>
+                  </div>
+                </div>
+                <div class="prof-3-flex">
+                  <div class="prof-3-img">
+                    <img src="imgs/activity-02.png" />
+                    <div class="prof-left-text">
+                      <h4 class="m-0">Academy</h4>
+                      <p class="color-888">Got The PHP Certificate</p>
+                    </div>
+                  </div>
+                  <div class="prof-right-text">
+                    <h4 class="m-0">16:05</h4>
+                    <p class="color-888">Yesterday</p>
+                  </div>
+                </div>
+                <div class="prof-3-flex">
+                  <div class="prof-3-img">
+                    <img src="imgs/activity-03.png" />
+                    <div class="prof-left-text">
+                      <h4 class="m-0">Badges</h4>
+                      <p class="color-888">Unlocked The 10 Skills Badge</p>
+                    </div>
+                  </div>
+                  <div class="prof-right-text">
+                    <h4 class="m-0">18:05</h4>
+                    <p class="color-888">Yesterday</p>
+                  </div>
+                </div>
+                <div class="prof-3-flex">
+                  <div class="prof-3-img">
+                    <img src="imgs/activity-01.png" />
+                    <div class="prof-left-text">
+                      <h4 class="m-0">Store</h4>
+                      <p class="color-888">Bought The Typescript Course</p>
+                    </div>
+                  </div>
+                  <div class="prof-right-text">
+                    <h4 class="m-0">12:05</h4>
+                    <p class="color-888">Yesterday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of prof-2 -->
+          </div>
+        </div>
+        <!-- end of profile content -->
+      </div>
+    </div>
+  </body>
+</html>

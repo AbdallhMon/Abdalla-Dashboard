@@ -1,0 +1,169 @@
+/**padding-and-margin**/
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.p-15 {
+  padding: 15px;
+}
+
+.m-0 {
+  margin: 0;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.m-10 {
+  margin: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+/**padding-and-margin**/
+/**back-ground-color&font-color**/
+.bg-eee {
+  background-color: #eee;
+}
+
+.bg-white {
+  background-color: white;
+}
+.color-888 {
+  color: #888;
+}
+.color-c {
+  color: #ccc;
+}
+/**back-ground-color&font-color**/
+/**border-radius and border**/
+.rad-6 {
+  border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
+}
+.rad-50 {
+  border-radius: 50%;
+}
+.bb-eee {
+  border-bottom: 1px solid #eee;
+}
+
+/**border-radius**/
+/**grid**/
+.grid-200 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+.grid-250 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+.grid-300 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+  padding-bottom: 20px;
+}
+/**grid**/
+/**flex**/
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+/**flex**/
+/**width**/
+.w-full {
+  width: 100%;
+}
+.w-250 {
+  width: 250px;
+}
+.m-w-250 {
+  min-width: 250px;
+}
+
+/**width**/
+/**display**/
+.d-block {
+  display: block;
+}
+/**display**/
+/**font**/
+.fs-14 {
+  font-size: 14px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+/**font**/
+/* position */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+
+/* position */
+.servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+.txt-c {
+  text-align: center;
+}
+.active {
+  background-color: #f6f6f6 !important;
+  border-radius: 6px !important;
+  transition: 0.3s !important;
+}

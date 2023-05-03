@@ -1,0 +1,307 @@
+/** container-width-media-query**/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+/**end-of-container**/
+/**global**/
+:root {
+  --main-color: #10cab7; /* genzre  */
+  --secondary-color: #2c4755; /* ko7le */
+  --section-padding: 60px;
+  --section-background: #f6f6f6; /*near to white*/
+  --main-duration: 0.5s;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 160%;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/**end-of-globel**/
+/**how to make the child in the middle of the parent**/
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+/**end-of-parent-child**/
+/** how to make the background-img as width or height as the user phone width(full-screen)**/
+.ff {
+  background-size: cover;
+  height: 100vh;
+  width: 100vh;
+}
+/**end-of-width-height**/
+/**grid**/
+.parent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 40px;
+}
+/**end-of-grid**/
+/** box shadow**/
+.header {
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+}
+ {
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+    0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+/**end-of-box-shadow**/
+/** if i want to select only the direct child all the direct childs i use
+  > 
+  for ex ul >li
+  **/
+/**Header with hover color**/
+.articles .container .article-header {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.articles .container .article-header ::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -25px;
+  background-color: #2196f3;
+  z-index: -1;
+}
+.articles .container .article-header ::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+  background-color: #2196f3;
+  z-index: -1;
+}
+.articles .container .article-header:hover h2 {
+  color: white;
+  transition: 1.5s;
+}
+.articles .container .article-header:hover ::before {
+  left: 0px;
+  transition: 0.8s;
+  animation-name: ar;
+  animation-duration: 0.8s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+.articles .container .article-header:hover ::after {
+  right: 0px;
+  transition: 0.8s;
+  animation-name: ar;
+  animation-duration: 0.8s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ar {
+  0% {
+    width: 12px;
+    height: 12px;
+  }
+  50% {
+    width: 12px;
+    height: 12px;
+  }
+  75% {
+    width: 50%;
+    height: 50%;
+    border-radius: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+.articles .container .article-header h2 {
+  border: 2px solid black;
+  padding: 10px 20px;
+  margin: 0;
+  color: black;
+  position: absolute;
+  z-index: 1000;
+}
+/**End-of-header-with-hover-color**/
+/**start-of-animation**/
+/**start-of-bouncing-icon**/
+.i {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 3;
+  animation-name: translatey;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes translatey {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(30px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(30px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/**end-of-bouncing-icon**/
+/**srart-of-up-and-down-img**/
+@keyframes translateimg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+/**end-of-up-and-down-img**/
+/**start-of-from-left-to-right-line**/
+.header .container > ul > li > a::before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  background-color: #1787e0;
+  height: 4px;
+  top: 0;
+  left: 0;
+}
+.header .container > ul > li > a:hover::before {
+  animation-name: width;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/**end-of-left-to-right**/
+/**end-of-animaton**/
+/**toggle-switch**/
+/**html:
+            <label>
+              <input class="toggle-checkbox" type="checkbox" checked />
+              <div class="toggle-switch"></div>
+            </label>
+            **/
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "" \f00d;
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+/**end-toggle-swtich**/
