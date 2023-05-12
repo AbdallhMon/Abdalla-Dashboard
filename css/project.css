@@ -354,172 +354,65 @@ textarea {
 }
 /**end-of-box-2**/
 /**start-of-box-3**/
-.yearly-flex {
-  display: flex;
-  flex-wrap: wrap;
+/* Start Targets */
+.targets .target-row .icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
 }
-.yearly-flex i {
-  font-size: 24px;
+.targets .details {
+  flex: 1;
 }
-.yearly-flex p {
-  margin: 10px 0;
+.targets .details .progress {
+  height: 4px;
 }
-
-.yearly-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  padding: 45px 40px;
+.targets .details .progress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
-.y-i-1 {
+.targets .details .progress > span span {
+  position: absolute;
+  bottom: 16px;
+  right: -16px;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.targets .details .progress > span span::after {
+  content: "";
+  border-color: transparent;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.targets .details .progress > .blue span::after {
+  border-top-color: var(--blue-color);
+}
+.targets .details .progress > .orange span::after {
+  border-top-color: var(--orange-color);
+}
+.targets .details .progress > .green span::after {
+  border-top-color: var(--green-color);
+}
+.blue .icon,
+.blue .progress {
   background-color: rgb(0 117 255 / 20%);
-  color: var(--blue-color);
 }
-.y-i-2 {
+.orange .icon,
+.orange .progress {
   background-color: rgb(245 158 11 / 20%);
-  color: var(--orange-color);
 }
-.y-i-3 {
+.green .icon,
+.green .progress {
   background-color: rgb(34 197 94 / 20%);
-  color: var(--green-color);
 }
-.yearly-inside {
-  width: 78%;
-}
-@media (max-width: 767px) {
-  .yearly-inside {
-    width: 72%;
-  }
-}
-.y-c-1 {
-  height: 5px;
-  width: 80%;
-  background: var(--blue-color);
-  margin-top: 10px;
-  position: relative;
-}
-.y-c-1 div {
-  width: 100%;
-  height: 5px;
-  background-color: rgb(0 117 255 / 20%);
-  position: absolute;
-  top: 0;
-  right: -20%;
-}
-.y-c-2 {
-  height: 5px;
-  width: 55%;
-  background-color: var(--orange-color);
-  margin-top: 10px;
-  position: relative;
-}
-.y-c-2 div {
-  width: 100%;
-  height: 5px;
-  background-color: rgb(245 158 11 / 20%);
-  position: absolute;
-  top: 0;
-  right: -75%;
-}
-.y-c-3 {
-  height: 5px;
-  width: 75%;
-  background-color: var(--green-color);
-  margin-top: 10px;
-  position: relative;
-}
-.y-c-3 div {
-  width: 100%;
-  height: 5px;
-  background-color: rgb(34 197 94 / 20%);
-  position: absolute;
-  top: 0;
-  right: -28%;
-}
-.y-i-2 {
-  padding: 45px 33px;
-}
-.y-i-3 {
-  padding: 45px 38px;
-}
-.y-c-1::after {
-  content: "80%";
-  position: absolute;
-  background-color: #0075ff;
-  width: 22px;
-  height: 10px;
-  top: -26px;
-  left: 96%;
-  z-index: 1;
-  padding: 5px;
-  font-size: 14px;
-  color: white;
-}
-.y-c-1::before {
-  content: "";
-  position: absolute;
-  background-color: #0075ff;
-  width: 22px;
-  height: 10px;
-  top: -17px;
-  left: 96%;
-  transform: rotate(45deg);
-}
-.y-c-2::after {
-  content: "80%";
-  position: absolute;
-  background-color: var(--orange-color);
-  width: 22px;
-  height: 10px;
-  top: -26px;
-  left: 93%;
-  z-index: 1;
-  padding: 5px;
-  font-size: 14px;
-  color: white;
-}
-.y-c-2::before {
-  content: "";
-  position: absolute;
-  background-color: var(--orange-color);
-  width: 22px;
-  height: 10px;
-  top: -18px;
-  left: 93%;
-  transform: rotate(45deg);
-}
-.y-c-3::after {
-  content: "80%";
-  position: absolute;
-  background-color: var(--green-color);
-  width: 22px;
-  height: 10px;
-  top: -26px;
-  left: 95%;
-  z-index: 1;
-  padding: 5px;
-  font-size: 14px;
-  color: white;
-}
-.y-c-3::before {
-  content: "";
-  position: absolute;
-  background-color: var(--green-color);
-  width: 22px;
-  height: 10px;
-  top: -18px;
-  left: 95%;
-  transform: rotate(45deg);
-}
-@media screen and (min-width: 1130px) and (max-width: 1283px) {
-  .yearly-inside {
-    width: 73%;
-  }
-}
-.yearly-flex:not(:last-child) {
-  margin-bottom: 20px;
-}
+/* End Targets */
 /**end-of-box-3**/
 /**start-of-box-4**/
 
@@ -677,139 +570,63 @@ textarea {
   margin: 10px 0;
 }
 /**end-of-box-8**/
-/**start-of-box-9**/
-.box-9 > div {
-  display: flex;
-  position: relative;
-  z-index: 12;
-}
 .box-2 h2 {
   margin-bottom: 1 !important;
 }
-.box-round {
-  margin: auto 15px auto 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 1px solid white;
-  outline: 1px solid #0075ff;
-  background: var(--blue-color);
-}
-.box-round-last {
-  background-color: white;
-}
-.box-round-animation {
-  -webkit-animation-name: box-round;
-          animation-name: box-round;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes box-round {
-  0% {
-    background-color: var(--blue-color);
-  }
-  30% {
-    background-color: var(--blue-color);
-  }
-  50% {
-    background-color: white;
-  }
-  80% {
-    background-color: white;
-  }
-  100% {
-    background-color: var(--blue-color);
-  }
-}
-@keyframes box-round {
-  0% {
-    background-color: var(--blue-color);
-  }
-  30% {
-    background-color: var(--blue-color);
-  }
-  50% {
-    background-color: white;
-  }
-  80% {
-    background-color: white;
-  }
-  100% {
-    background-color: var(--blue-color);
-  }
-}
-.box-9 {
-  position: relative;
-}
-.box-9::before {
+/* Start Last Project */
+.last-project ul::before {
   content: "";
-  top: 70px;
-  left: 32px;
   position: absolute;
-  height: 60%;
+  left: 11px;
   width: 2px;
+  height: 100%;
   background-color: var(--blue-color);
 }
-.yearly-flex {
-  flex-wrap: nowrap !important;
-}
-@media (min-width: 1600px) {
-  .box-9::before {
-    height: 40%;
-  }
-}
-@media (min-width: 3500px) {
-  .box-9::before {
-    height: 60%;
-  }
-}
-/**end-of-box-9**/
-/**start-of-box-10**/
-.b-10-round {
-  width: 16px;
-  height: 16px;
+.last-project ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
   border-radius: 50%;
-  margin: auto 20px auto 0;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 1;
 }
-.b-10-flex p {
-  margin: 0;
-}
-.b-10-flex h4 {
-  margin: 0 0 10px 0;
-}
-.b-10-blue {
+.last-project ul li.done::before {
   background-color: var(--blue-color);
 }
-.b-10-orange {
-  background-color: var(--orange-color);
+.last-project ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
 }
-.b-10-green {
-  background-color: var(--green-color);
+.last-project .launch-icon {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
 }
-.b-10-red {
-  background-color: var(--red-color);
+/* End Last Project */
+/**start-of-box-10**/
+/* Start Reminders */
+.reminders ul li .key {
+  width: 15px;
+  height: 15px;
 }
-.b-10-blue-f {
-  padding-left: 20px;
-  border-left: 1px solid var(--blue-color);
+.reminders ul li > .blue {
+  border-left: 2px solid var(--blue-color);
 }
-.b-10-orange-f {
-  padding-left: 20px;
-  border-left: 1px solid var(--orange-color);
+.reminders ul li > .green {
+  border-left: 2px solid var(--green-color);
 }
-.b-10-green-f {
-  padding-left: 20px;
-  border-left: 1px solid var(--green-color);
+.reminders ul li > .orange {
+  border-left: 2px solid var(--orange-color);
 }
-.b-10-red-f {
-  padding-left: 20px;
-  border-left: 1px solid var(--red-color);
+.reminders ul li > .red {
+  border-left: 2px solid var(--red-color);
 }
-.box-10 > div {
-  margin-bottom: 15px;
-}
+/* End Reminders */
 /**end-of-box-10**/
 /**start-of-box-11**/
 .b-11-flex h4,
